@@ -1,9 +1,13 @@
 # Realistic Stack Effects for Derail Valley
 
-Chimney smoke and steam that behave like the real thing, on every steam
-locomotive: a puff on every exhaust beat, thrown up by the blast and
-rising as a buoyant plume that spreads, thins, and drifts with the wind,
-its color taken from the fire and its white steam from the weather.
+**Realistic Firing's stack effects, for the stock locomotives.** This is
+the same chimney smoke and steam as Realistic Firing, built from the same
+code, as a mod of its own. It reads the game's own firebox, so it works on
+the stock S282 and S060 (and Custom Car Loader steam engines) without
+Realistic Firing or its firing simulation: a puff on every exhaust beat,
+thrown up by the blast and rising as a buoyant plume that spreads, thins,
+and drifts with the wind, its color taken from the fire and its white
+steam from the weather.
 
 ![The stock S282 slogging up a grade at a frosty dawn](https://raw.githubusercontent.com/Specter242/DVRealisticStackEffects/main/images/realistic-stack-effects-promo.jpg)
 
@@ -34,8 +38,9 @@ Requires Unity Mod Manager 0.28.2 or newer. Tested on Derail Valley Build 99.
 
 ## Engines
 
-Every steam locomotive with the game's own chimney smoke: the S282 and
-S060, and Custom Car Loader steam engines. Each reads its own firebox:
+Every steam locomotive with the game's own chimney smoke, fired the
+game's own way: the S282 and S060, and Custom Car Loader steam engines.
+Each reads its own firebox:
 how much smoke it makes, its heat, the air through it, and the coal
 landing on it.
 
