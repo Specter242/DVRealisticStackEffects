@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/RealisticStackEffects.Core/RealisticStackEffects.Core.csproj" />
+    <Project Path="src/RealisticStackEffects/RealisticStackEffects.csproj" />
+  </Folder>
+  <Folder Name="/tools/">
+    <Project Path="tools/RealisticStackEffects.AdapterCheck/RealisticStackEffects.AdapterCheck.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/RealisticStackEffects.Core.Tests/RealisticStackEffects.Core.Tests.csproj" />
+  </Folder>
+</Solution>

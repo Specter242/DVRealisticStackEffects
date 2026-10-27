@@ -1,0 +1,13 @@
+{
+  "Id": "RealisticStackEffects",
+  "DisplayName": "Realistic Stack Effects",
+  "Author": "Specter242",
+  "Version": "1.0.0",
+  "ManagerVersion": "0.28.2",
+  "AssemblyName": "RealisticStackEffects.dll",
+  "EntryMethod": "RealisticStackEffects.Main.Load",
+  "LoadAfter": ["DVCustomCarLoader", "Multiplayer"],
+  "MultiplayerCompatibility": "Client",
+  "HomePage": "https://github.com/Specter242/DVRealisticStackEffects",
+  "Repository": "https://raw.githubusercontent.com/Specter242/DVRealisticStackEffects/main/repository.json"
+}
