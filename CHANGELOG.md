@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.0.1
+
+- **Mod list:** Unity Mod Manager's home page link now opens the Nexus page.
+- **Fixed:** when the train slowed or stopped, the smoke it had left behind
+  drew back in and hung in the air along the line, and smoke left below the
+  stack, past a crest, was carried along with the train.
+- **Smoke quality:** Medium and Low now also drop the faintest smoke at the
+  plume's far end, the biggest cost on a slower graphics card.
+
 ## 1.0.0
 
 - **First release:** Realistic Firing's chimney smoke and steam on every
