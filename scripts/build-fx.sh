@@ -31,3 +31,9 @@ if ! "$unity" -batchmode -nographics -quit -projectPath "$project" \
     exit 1
 fi
 echo "Built $out/realisticfiring_fx and $out/realisticstackeffects_fx"
+
+# The selected booklet is a separate bundle and does not enter Stack Effects,
+# whose public source has no booklet to build.
+if [[ -f "$repo/scripts/build-manual.sh" ]]; then
+    "$repo/scripts/build-manual.sh"
+fi

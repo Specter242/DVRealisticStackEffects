@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.0.2
+
+- **Fixed:** the white steam faded away on a warm day, most of all with the
+  regulator eased. A summer afternoon now keeps a short white at the stack,
+  and easing the regulator no longer takes it away.
+- **Fixed:** an engine could pile up duplicate chimney effects over time,
+  thickening the smoke and slowing the game down.
+- **Heat shimmer:** now drawn before the smoke, so it no longer roughens the
+  plume's edges, and it shares TurboTurbo's: with both mods installed, the
+  plumes no longer get holes.
+
 ## 1.0.1
 
 - **Mod list:** Unity Mod Manager's home page link now opens the Nexus page.
