@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.3 (2026-11-01)
+
+- Faint smoke and steam fade out instead of disappearing at the cutoff.
+
 ## 1.0.2
 
 - **Fixed:** the white steam faded away on a warm day, most of all with the

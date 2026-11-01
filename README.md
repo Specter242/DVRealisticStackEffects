@@ -1,5 +1,7 @@
 # Realistic Stack Effects for Derail Valley
 
+**1.0.3** (2026-11-01): faint smoke and steam complete their fade. Verification is offline: model tests, adapter checks, builds and package checks. This fix has not been run in game, in VR or in live multiplayer.
+
 **Realistic Firing's stack effects, for the stock locomotives.** This is
 the same chimney smoke and steam as Realistic Firing, built from the same
 code, as a mod of its own. It reads the game's own firebox, so it works on
