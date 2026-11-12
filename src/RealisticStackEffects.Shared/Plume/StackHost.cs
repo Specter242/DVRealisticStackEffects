@@ -5,6 +5,14 @@ using UnityModManagerNet;
 
 namespace RealisticStackEffects
 {
+    /// <summary>
+    /// Subsections within the plume's main-thread update. Motion includes the
+    /// rest from Shadows on: Carry is the particles' own working out (with
+    /// Shadows), Buffers their copying from and to the engine, CustomData the
+    /// values written for the shader beside them.
+    /// </summary>
+    internal enum PlumePhase { OffscreenSetup, Weather, Emission, Motion, Shadows, Buffers, VolumeSubmit, Carry, CustomData }
+
     /// <summary>The settings the chimney's effects follow: the hosting mod's.</summary>
     internal interface IStackSettings
     {
@@ -15,6 +23,9 @@ namespace RealisticStackEffects
         SmokeSeason SmokeSeason { get; }
 
         bool HeatShimmer { get; }
+
+        /// <summary>Whether the engine's other steam (dynamo, cylinder cocks, safety valves, leaks) is drawn as the plume, as the session started.</summary>
+        bool EngineSteam { get; }
 
         /// <summary>Whether the custom effects draw the smoke, as the session started (a change needs a restart).</summary>
         bool CustomEffects { get; }
@@ -60,6 +71,27 @@ namespace RealisticStackEffects
 
         /// <summary>Camera sorting and command-buffer preparation, separately from the plume update.</summary>
         public static Action<long> CameraTimed;
+
+        /// <summary>Optional nested timings; separate from the overall plume total.</summary>
+        public static Action<PlumePhase, long> PhaseTimed;
+
+        public static PhaseTiming TimePhase(PlumePhase phase) => new PhaseTiming(phase);
+
+        internal readonly struct PhaseTiming : IDisposable
+        {
+            private readonly PlumePhase phase;
+            private readonly long started;
+            internal PhaseTiming(PlumePhase phase)
+            {
+                this.phase = phase;
+                started = PhaseTimed != null && Settings != null && Settings.StatusLogInterval > 0
+                    ? System.Diagnostics.Stopwatch.GetTimestamp() : 0L;
+            }
+            public void Dispose()
+            {
+                if (started != 0L) PhaseTimed?.Invoke(phase, started);
+            }
+        }
 
         /// <summary>The scale of the developer tools' windows.</summary>
         public static Func<float> GuiScale = () => 1f;

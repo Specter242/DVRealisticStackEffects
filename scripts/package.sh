@@ -22,10 +22,12 @@ elif [[ ! -f "$bundle" ]]; then
     echo "No effects bundle at $bundle and no Unity to build one" >&2
     exit 1
 fi
+# A bundle older than its shaders, builder, or generators cannot ship.
+python3 -I "$repo/scripts/bundle-inputs.py" check "$bundle"
 
 mkdir -p "$repo/dist"
 stage="$(mktemp -d "$repo/dist/package.XXXXXX")"
-trap 'rm -rf "$stage"' EXIT
+trap 'rm -rf "${stage:?}"' EXIT
 mkdir "$stage/RealisticStackEffects"
 cp "$out/Info.json" "$out/RealisticStackEffects.dll" "$out/RealisticStackEffects.Core.dll" \
     "$bundle" "$repo/README.md" "$repo/CHANGELOG.md" "$repo/LICENSE" "$stage/RealisticStackEffects/"
@@ -35,7 +37,7 @@ files=(RealisticStackEffects/Info.json RealisticStackEffects/RealisticStackEffec
 
 # Select the archive's contents explicitly; never include assemblies copied
 # for adapter checks, local settings, logs, or development documents.
-rm -f "$zipfile"
+rm -f "${zipfile:?}"
 (cd "$stage" && zip -q -X "$zipfile" "${files[@]}")
 echo "Built $zipfile"
 (cd "$(dirname "$zipfile")" && sha256sum "$(basename "$zipfile")")

@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.1.0 (2026-11-11)
+
+- **New: steam around the engine.** The dynamo, cylinder cocks, safety
+  valves, whistle, glands, and small leaks now steam like the chimney's
+  plume, by the weather: long white trails on a frosty day, little or
+  nothing on a hot one. It needs Custom smoke effects; turn it off with
+  Steam around the engine in the settings (restart required). With
+  Realistic Firing 1.18.0, its booster and injector-overflow steam are
+  drawn too.
+- **Better frame rates.** The chimney smoke now costs about half as much
+  for the engine you are on and far less for engines out of view or far
+  away, and no longer gets heavier when the frame rate falls under 60.
+- Smoke and steam no longer stay lit by the sun after it has set.
+
 ## 1.0.3 (2026-11-01)
 
 - Faint smoke and steam fade out instead of disappearing at the cutoff.

@@ -14,7 +14,7 @@ log="$repo/fx/build/stack-asset-check.log"
 [[ "$(basename "$bundle")" == realisticstackeffects_fx ]] || { echo "Expected a realisticstackeffects_fx bundle" >&2; exit 1; }
 bundle="$(realpath "$bundle")"
 project="$(mktemp -d /tmp/rse-asset-check-XXXXXX)"
-trap 'rm -rf "$project"' EXIT
+trap 'rm -rf "${project:?}"' EXIT
 mkdir -p "$project/Assets" "$project/Packages" "$project/ProjectSettings" "$(dirname "$log")"
 cp "$repo/fx/RealisticFiringFX/Packages/manifest.json" "$project/Packages/manifest.json"
 cp "$repo/fx/RealisticFiringFX/ProjectSettings/ProjectVersion.txt" "$project/ProjectSettings/ProjectVersion.txt"

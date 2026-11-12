@@ -1,5 +1,7 @@
 # Realistic Stack Effects for Derail Valley
 
+**1.1.0** (2026-11-11): the engine's own steam drawn as the plume is, by the weather; better frame rates from the chimney smoke; and smoke and steam no longer lit by a set sun. The owner played the engine steam on the S282 in game, with Realistic Firing, in three private previews, and isolated game runs on a clone of the game captured it, at dusk among them. The frame-rate work was timed in game against Realistic Firing 1.17.9's plume on the code before it joined the engine steam; the joined build was checked by its builds and tests. Not run in game: this mod alone without Realistic Firing, engines other than the S282, the steam in a tunnel, VR, and live multiplayer.
+
 **1.0.3** (2026-11-01): faint smoke and steam complete their fade. Verification is offline: model tests, adapter checks, builds and package checks. This fix has not been run in game, in VR or in live multiplayer.
 
 **Realistic Firing's stack effects, for the stock locomotives.** This is
@@ -37,6 +39,10 @@ Requires Unity Mod Manager 0.28.2 or newer. Tested on Derail Valley Build 99.
   afternoon; big, lingering plumes on a damp dawn, in the rain, or in
   winter. With DV Seasons running, its season's temperature is used.
 - **Heat shimmer** over a clean stack, and **cinders** on hard beats.
+- **Steam around the engine:** the dynamo's, the cylinder cocks', the
+  safety valves', the whistle's, the glands', and small leaks' steam,
+  drawn as the plume is and by the same weather: long white trails on a
+  frosty day, little or nothing on a hot, dry one.
 
 ## Engines
 
@@ -61,6 +67,8 @@ Firing draws the smoke as before, until it is updated.
 - **Custom smoke effects** (restart required): off, the plume drives the
   game's own smoke particles.
 - **Heat shimmer** (restart required).
+- **Steam around the engine** (restart required): off, the game's own
+  puffs stay.
 - **Smoke quality**, for a slower graphics card: Medium draws the smoke
   at half resolution, Low with half as many puffs besides (in VR, or with
   forward rendering, half and a quarter as many puffs instead).
