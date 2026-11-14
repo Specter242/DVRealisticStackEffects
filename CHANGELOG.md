@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.2.1 (2026-11-13)
+
+- Fixed: steam around the engine follows its valve. A blowdown cracked open
+  blows a little and one wide open blows hard, whatever you opened first;
+  the same for the whistle, safety valves, dynamo, and a cracked cylinder.
+
 ## 1.2.0 (2026-11-13)
 
 - **The chimney's exhaust looks more like the real thing.** Each beat's
