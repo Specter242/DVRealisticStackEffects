@@ -1,5 +1,7 @@
 # Realistic Stack Effects for Derail Valley
 
+**1.2.0** (2026-11-13): the chimney's exhaust let out beat by beat and attached at the stack's rim, white from the rim in damp air, and no longer in two colors on a smoky start; the engine's steam drawn behind the smoke where it is behind it; and an Auto smoke quality. The owner played private builds with the exhaust changes on the S282, with Realistic Firing. Isolated game runs on a clone of the game captured the exhaust with this mod drawing beside Realistic Firing, at High and Medium, and ran Auto stepping the smoke down and back up. Not run in game: this exact zip, this mod alone without Realistic Firing, engines other than the S282, VR, and live multiplayer.
+
 **1.1.0** (2026-11-11): the engine's own steam drawn as the plume is, by the weather; better frame rates from the chimney smoke; and smoke and steam no longer lit by a set sun. The owner played the engine steam on the S282 in game, with Realistic Firing, in three private previews, and isolated game runs on a clone of the game captured it, at dusk among them. The frame-rate work was timed in game against Realistic Firing 1.17.9's plume on the code before it joined the engine steam; the joined build was checked by its builds and tests. Not run in game: this mod alone without Realistic Firing, engines other than the S282, the steam in a tunnel, VR, and live multiplayer.
 
 **1.0.3** (2026-11-01): faint smoke and steam complete their fade. Verification is offline: model tests, adapter checks, builds and package checks. This fix has not been run in game, in VR or in live multiplayer.
@@ -71,7 +73,9 @@ Firing draws the smoke as before, until it is updated.
   puffs stay.
 - **Smoke quality**, for a slower graphics card: Medium draws the smoke
   at half resolution, Low with half as many puffs besides (in VR, or with
-  forward rendering, half and a quarter as many puffs instead).
+  forward rendering, half and a quarter as many puffs instead). Auto
+  draws at High and lowers the quality only while the game runs under 45
+  frames a second with smoke in the air and the lower quality helps.
 - **Season** for the steam's air, when DV Seasons isn't running.
 
 ## Multiplayer

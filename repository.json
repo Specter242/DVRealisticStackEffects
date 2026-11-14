@@ -2,6 +2,11 @@
   "Releases": [
     {
       "Id": "RealisticStackEffects",
+      "Version": "1.2.0",
+      "DownloadUrl": "https://github.com/Specter242/DVRealisticStackEffects/releases/download/v1.2.0/RealisticStackEffects-1.2.0.zip"
+    },
+    {
+      "Id": "RealisticStackEffects",
       "Version": "1.1.0",
       "DownloadUrl": "https://github.com/Specter242/DVRealisticStackEffects/releases/download/v1.1.0/RealisticStackEffects-1.1.0.zip"
     },

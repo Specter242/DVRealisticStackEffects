@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.2.0 (2026-11-13)
+
+- **The chimney's exhaust looks more like the real thing.** Each beat's
+  steam leaves as a burst that dies away, where it left all at once: at
+  slow, hard beats the plume starts at the stack's rim, not some metres
+  over it. In damp air its steam is white from the rim up, and a smoky
+  start no longer comes out of the stack in two colors.
+- **New: Auto smoke quality.** Smoke quality has a fourth choice. Auto
+  draws the smoke at High and lowers it only while the game runs under 45
+  frames a second with smoke in the air and the lower quality helps, then
+  raises it again when the game runs well. High is still the default.
+- The steam around the engine is drawn behind the chimney's smoke where
+  it is behind it, where it showed in front of the smoke from every side.
+
 ## 1.1.0 (2026-11-11)
 
 - **New: steam around the engine.** The dynamo, cylinder cocks, safety
