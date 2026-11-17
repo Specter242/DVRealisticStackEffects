@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.2.2 (2026-11-17)
+
+- The settings are tidier: smoke quality and season first, then steam
+  around the engine, heat shimmer, and custom smoke effects, with short
+  names and the details as tooltips (point at each one's **?**).
+
 ## 1.2.1 (2026-11-13)
 
 - Fixed: steam around the engine follows its valve. A blowdown cracked open

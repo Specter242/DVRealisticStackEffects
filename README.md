@@ -1,5 +1,7 @@
 # Realistic Stack Effects for Derail Valley
 
+**1.2.2** (2026-11-17): the settings put the most used first (smoke quality and season, then steam around the engine, heat shimmer, and custom smoke effects), with short labels and the details as tooltips, in Unity Mod Manager's window and the Comms Tablet's Settings app. The public build leaves out the plume test bed and captures and the logging switches: it logs each plume's setup, and errors. Their order, labels, and tooltips were checked by the adapter checks, and a settings file saved by 1.2.1 loaded whole. Not run in game: this exact zip, the settings window by eye, VR, and multiplayer.
+
 **1.2.1** (2026-11-13): a hotfix: the steam around the engine follows its valve, so a blowdown cracked open blows a little and one wide open blows hard, whatever was opened first; the same for the whistle, safety valves, dynamo, and a cracked cylinder. An isolated game run opened the blowdown on a steamed S282 and FEF-3 to 10 % and 100 % in both orders, with Realistic Firing, which draws the same steam. Not run in game: this mod alone, this exact zip, VR, multiplayer, and the other sources at part opening.
 
 **1.2.0** (2026-11-13): the chimney's exhaust let out beat by beat and attached at the stack's rim, white from the rim in damp air, and no longer in two colors on a smoky start; the engine's steam drawn behind the smoke where it is behind it; and an Auto smoke quality. The owner played private builds with the exhaust changes on the S282, with Realistic Firing. Isolated game runs on a clone of the game captured the exhaust with this mod drawing beside Realistic Firing, at High and Medium, and ran Auto stepping the smoke down and back up. Not run in game: this exact zip, this mod alone without Realistic Firing, engines other than the S282, VR, and live multiplayer.
@@ -68,17 +70,19 @@ Firing draws the smoke as before, until it is updated.
 
 ## Settings
 
-- **Custom smoke effects** (restart required): off, the plume drives the
-  game's own smoke particles.
-- **Heat shimmer** (restart required).
-- **Steam around the engine** (restart required): off, the game's own
-  puffs stay.
+Each setting's details show when you point at its **?**.
+
 - **Smoke quality**, for a slower graphics card: Medium draws the smoke
   at half resolution, Low with half as many puffs besides (in VR, or with
   forward rendering, half and a quarter as many puffs instead). Auto
   draws at High and lowers the quality only while the game runs under 45
   frames a second with smoke in the air and the lower quality helps.
 - **Season** for the steam's air, when DV Seasons isn't running.
+- **Steam around the engine** (restart required): off, the game's own
+  puffs stay.
+- **Heat shimmer** (restart required).
+- **Custom smoke effects** (restart required): off, the plume drives the
+  game's own smoke particles.
 
 ## Multiplayer
 

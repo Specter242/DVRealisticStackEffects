@@ -14,7 +14,7 @@ zipfile="$repo/dist/RealisticStackEffects-$version.zip"
 dotnet test "$repo/tests/RealisticStackEffects.Core.Tests" -c Release -nologo -v quiet
 "$repo/scripts/check-adapter.sh"
 dotnet build "$repo/src/RealisticStackEffects/RealisticStackEffects.csproj" \
-    -c Release -p:DvInstallDir="$dv" -warnaserror -nologo
+    -c Release -p:DvInstallDir="$dv" -p:PublicRelease=true -warnaserror -nologo
 
 if [[ -x "$unity" ]]; then
     "$repo/scripts/build-fx.sh"
