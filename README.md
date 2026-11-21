@@ -1,5 +1,7 @@
 # Realistic Stack Effects for Derail Valley
 
+**1.3.0** (2026-11-21): the plume follows the air: it swirls as it rises, bends more in the wind higher up, levels off under a calm dawn's inversion, and its steam stays white and lingers in the game's fog; new Steam visibility and Plume wind sliders, and Heat shimmer switched without a restart; without Realistic Firing, Custom Car Loader oil burners throw no cinders; and performance and bug fixes. Isolated game runs on a clone of the game, with a player's list of 26 mods, ran a build of it beside Realistic Firing 1.25.0 and alone: a lit S282 standing and running in clear air and in fog, the sliders and Heat shimmer changed live, its smoke reader set up again, the S484-840, the S2102-870 and the Santa Fe 2901's oil burner, and Realistic Firing's fires and stack measurements reaching it. Not run in game: an engine with more than one smoke reader (none of the engines tried has one), VR, and multiplayer.
+
 **1.2.2** (2026-11-17): the settings put the most used first (smoke quality and season, then steam around the engine, heat shimmer, and custom smoke effects), with short labels and the details as tooltips, in Unity Mod Manager's window and the Comms Tablet's Settings app. The public build leaves out the plume test bed and captures and the logging switches: it logs each plume's setup, and errors. Their order, labels, and tooltips were checked by the adapter checks, and a settings file saved by 1.2.1 loaded whole. Not run in game: this exact zip, the settings window by eye, VR, and multiplayer.
 
 **1.2.1** (2026-11-13): a hotfix: the steam around the engine follows its valve, so a blowdown cracked open blows a little and one wide open blows hard, whatever was opened first; the same for the whistle, safety valves, dynamo, and a cracked cylinder. An isolated game run opened the blowdown on a steamed S282 and FEF-3 to 10 % and 100 % in both orders, with Realistic Firing, which draws the same steam. Not run in game: this mod alone, this exact zip, VR, multiplayer, and the other sources at part opening.
@@ -36,14 +38,16 @@ Requires Unity Mod Manager 0.28.2 or newer. Tested on Derail Valley Build 99.
   puffs are thrown high in a narrow jet before they slow and billow;
   drifting, the stack goes quiet.
 - **A plume that rises on its own heat**, hundreds of feet in still air,
-  bent over by the wind and by the train's speed, spreading and thinning
-  as it ages. Under a tunnel's roof it spreads along the roof instead.
+  bent over by the wind and by the train's speed, swirling and spreading
+  and thinning as it ages, and levelling off under a calm dawn's
+  inversion. Under a tunnel's roof it spreads along the roof instead.
 - **Smoke colored by the fire.** A well-drawn fire shows a faint haze; a
   fire short of air smokes gray; a fresh shovelful smokes out dark for a
   few seconds, then clears. With plenty of air the stack runs clear.
 - **Steam that follows the weather.** Little white on a hot, dry
-  afternoon; big, lingering plumes on a damp dawn, in the rain, or in
-  winter. With DV Seasons running, its season's temperature is used.
+  afternoon; big, lingering plumes on a damp dawn, in the rain, in the
+  game's fog, or in winter. With DV Seasons running, its season's
+  temperature is used.
 - **Heat shimmer** over a clean stack, and **cinders** on hard beats.
 - **Steam around the engine:** the dynamo's, the cylinder cocks', the
   safety valves', the whistle's, the glands', and small leaks' steam,
@@ -56,7 +60,8 @@ Every steam locomotive with the game's own chimney smoke, fired the
 game's own way: the S282 and S060, and Custom Car Loader steam engines.
 Each reads its own firebox:
 how much smoke it makes, its heat, the air through it, and the coal
-landing on it.
+landing on it. Without Realistic Firing, a Custom Car Loader oil burner
+throws no cinders.
 
 ## With Realistic Firing
 
@@ -78,9 +83,16 @@ Each setting's details show when you point at its **?**.
   draws at High and lowers the quality only while the game runs under 45
   frames a second with smoke in the air and the lower quality helps.
 - **Season** for the steam's air, when DV Seasons isn't running.
+- **Steam visibility** (0.5×–2.0×, default 1.0×): scales how strongly the
+  chimney's exhaust steam shows in the air, live; 1.0× follows the
+  weather, while steam around the engine continues to follow the weather
+  directly.
+- **Plume wind** (0×–2.0×, default 1.0×): scales how strongly the
+  weather's wind drifts the plume, live; 1.0× is normal, 0× is still air.
+- **Heat shimmer**: shimmer above a clean stack, toggled live (needs
+  custom smoke effects).
 - **Steam around the engine** (restart required): off, the game's own
   puffs stay.
-- **Heat shimmer** (restart required).
 - **Custom smoke effects** (restart required): off, the plume drives the
   game's own smoke particles.
 

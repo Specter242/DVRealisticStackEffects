@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.3.0 (2026-11-21)
+
+- **The plume follows the air.** It swirls as it rises, bends more in the
+  wind higher up, levels off under a calm dawn's inversion, and in the
+  game's fog its steam stays white and lingers.
+- **New settings:** Steam visibility and Plume wind sliders; Heat shimmer
+  now turns on and off without a restart.
+- Without Realistic Firing, Custom Car Loader oil burners no longer throw
+  cinders.
+- Performance improvements and bug fixes.
+
 ## 1.2.2 (2026-11-17)
 
 - The settings are tidier: smoke quality and season first, then steam
