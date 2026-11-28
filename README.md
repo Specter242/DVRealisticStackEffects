@@ -67,6 +67,10 @@ how much smoke it makes, its heat, the air through it, and the coal
 landing on it. Without Realistic Firing, a Custom Car Loader oil burner
 throws no cinders.
 
+Locomotive and mod authors:
+[API.md](https://github.com/Specter242/DVRealisticStackEffects/blob/main/API.md)
+explains chimney dimensions and how to feed the plume from your own mod.
+
 ## With Realistic Firing
 
 With Realistic Firing 1.16.0 or newer installed too, this mod draws the
