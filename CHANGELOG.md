@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.2 (2026-11-27)
+
+- Smoother frame times: less memory churned every frame.
+
 ## 1.3.1 (2026-11-21)
 
 - Bug fixes.
